@@ -1,0 +1,33 @@
+{
+  "name": "restaurantly",
+  "version": "1.0.0",
+  "description": "Web site for reutaurant",
+  "main": "index.html",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-desarrollo-web/stage-1-html-css.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/team-desarrollo-web/stage-1-html-css/issues"
+  },
+  "homepage": "https://github.com/team-desarrollo-web/stage-1-html-css#readme",
+  "scripts": {
+    "lint": "stylelint \"./src/**/*.css\"",
+    "lint:fix": "stylelint \"./src/**/*.css\" --fix",
+    "prepare": "husky install",
+    "pre-commit": "npm run lint",
+    "pre-push": "npm run lint"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "stylelint": "^15.10.3",
+    "stylelint-config-recess-order": "^4.3.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-prettier": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
