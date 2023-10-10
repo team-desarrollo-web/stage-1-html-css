@@ -1,8 +1,37 @@
-.title {
-  position: relative;
-  display: flex;
-  width: 100px;
-  height: 50px;
-  color: red;
-  background-color: aquamarine;
+/* stylelint-disable-next-line prettier/prettier */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* stylelint-disable-next-line font-family-name-quotes */
+  /* stylelint-disable-next-line prettier/prettier */
+  font-family: 'Poppins', sans-serif;
+}
+
+.piu {
+  font-size: 18px;
+}
+
+.navbar {
+  background-color: #302f2b;
+}
+
+.navbar__li {
+  display: inline-block;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.navbar__li a {
+  box-sizing: border-box;
+  margin-right: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar__li:hover > a {
+  color: #d9ba85;
+  transition: all 0.5s;
 }
