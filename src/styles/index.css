@@ -10,24 +10,44 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.piu {
+.topbar .number {
+  position: relative;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 800px;
+  font-size: 18px;
+}
+
+.topbar .hours {
+  position: absolute;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 1100px;
   font-size: 18px;
 }
 
 .navbar {
+  top: 10px;
+  width: 100%;
+  height: 70px;
   background-color: #302f2b;
+  border-bottom: 1px solid #302f2b;
+}
+
+.navbar__ul {
+  margin-bottom: 0;
 }
 
 .navbar__li {
   display: inline-block;
-  padding: 15px;
-  margin-top: 10px;
 }
 
 .navbar__li a {
-  box-sizing: border-box;
-  margin-right: 10px;
+  font-size: 16px;
   color: #ffffff;
+  text-align: center;
   text-decoration: none;
 }
 
