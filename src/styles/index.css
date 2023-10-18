@@ -36,19 +36,19 @@
 } */
 
 .navbar-brand {
+  padding-right: 400px;
   margin-left: 15px;
   font-size: 20px;
 }
 
-#links li {
+.navbar-expand-lg .navbar-collapse {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 50px;
 }
 
 .navbar-nav .nav-link a {
-  padding: 0;
+  padding: 0 40px;
   font-size: 16px;
   color: #ffffff;
   text-decoration: none;
