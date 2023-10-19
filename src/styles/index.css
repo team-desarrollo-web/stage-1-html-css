@@ -1,12 +1,10 @@
-/* stylelint-disable-next-line prettier/prettier */
+/* stylelint-disable prettier/prettier */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* stylelint-disable-next-line font-family-name-quotes */
-  /* stylelint-disable-next-line prettier/prettier */
   font-family: 'Poppins', sans-serif;
 }
 
@@ -18,40 +16,26 @@
   font-size: 18px;
 }
 
-/* .topbar .number {
-  position: relative;
-  top: 10px;
-  display: flex;
-  align-items: center;
-  margin-left: 800px;
-}
-
-.topbar .hours {
-  position: absolute;
-  top: 10px;
-  display: flex;
-  align-items: center;
-  margin-left: 1100px;
-  font-size: 18px;
-} */
-
 .navbar-brand {
-  padding-right: 400px;
   margin-left: 15px;
   font-size: 20px;
 }
 
-.navbar-expand-lg .navbar-collapse {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.navbar-collapse {
+  justify-content: space-around;
 }
 
 .navbar-nav .nav-link a {
-  padding: 0 40px;
+  padding: 0 20px;
   font-size: 16px;
   color: #ffffff;
+  text-align: center;
   text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-link {
+  padding: 0 !important;
 }
 
 #links :hover > a {
@@ -62,6 +46,4 @@
   transition: all 0.5s;
 }
 
-.blank-space {
-  margin: 0 100px;
-}
+
