@@ -5,21 +5,39 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-.container {
+.container-fluid {
+  background-color: #1a1a1a;
+}
+
+.container-xl-h1 {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  color: #ffffff;
 }
 
-.phone__number {
-  margin-right: 50px;
-  font-family: 'Taviraj', serif;
-  font-size: 18px;
+.container-xl-h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', sans-serif;
+  color: #cda45e;
 }
 
-.days__week {
-  margin-right: 50px;
-  font-family: 'Taviraj', serif;
-  font-size: 18px;
+.container-xl-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container-xl-ul > li > a {
+  color: #ffffff;
+  text-decoration: none;
 }
