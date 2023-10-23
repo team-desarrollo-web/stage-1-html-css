@@ -16,6 +16,17 @@
   font-size: 18px;
 }
 
+.topbar .icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #d9ba85;
+}
+
+#sticky-top {
+  position: sticky;
+  top: 0;
+}
+
 .navbar-brand {
   margin-left: 15px;
   font-size: 20px;
@@ -36,6 +47,7 @@
 
 .nav-link {
   padding: 0 !important;
+  margin: 10px 0;
 }
 
 #links :hover > a {
@@ -45,5 +57,3 @@
   border-bottom-style: solid;
   transition: all 0.5s;
 }
-
-
