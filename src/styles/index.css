@@ -1,4 +1,3 @@
-/* stylelint-disable prettier/prettier */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 * {
@@ -8,11 +7,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+}
+
 .topbar {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 16px;
+  padding-top: 16px;
   font-size: 18px;
 }
 
@@ -22,13 +27,8 @@
   color: #d9ba85;
 }
 
-#sticky-top {
-  position: sticky;
-  top: 0;
-}
-
 .navbar-brand {
-  margin-left: 15px;
+  margin-left: 15;
   font-size: 20px;
 }
 
@@ -36,8 +36,12 @@
   justify-content: space-around;
 }
 
+#button {
+  box-shadow: none;
+}
+
 .navbar-nav .nav-link a {
-  padding: 0 20px;
+  padding: 0 20px 4px;
   font-size: 16px;
   color: #ffffff;
   text-align: center;
@@ -45,15 +49,13 @@
   white-space: nowrap;
 }
 
-.nav-link {
-  padding: 0 !important;
-  margin: 10px 0;
+#links .active {
+  color: #d9ba85;
+  border-bottom: 2px solid #d9ba85;
 }
 
 #links :hover > a {
   color: #d9ba85;
-  border-width: 2px;
-  border-bottom-color: #d9ba85;
-  border-bottom-style: solid;
+  border-bottom: 2px solid #d9ba85;
   transition: all 0.5s;
 }
