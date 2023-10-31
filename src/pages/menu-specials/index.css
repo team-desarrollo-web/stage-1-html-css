@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@600&family=Taviraj:wght@500&display=swap');
+/* stylelint-disable no-descending-specificity */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@200;600&family=Taviraj:wght@500&display=swap');
 
 * {
   padding: 0;
@@ -17,15 +17,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 44px;
   color: #ffffff;
+}
+
+.container-title h1 {
+  padding: 20px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.container-title h1:hover {
+  color: #cda45e;
+  cursor: pointer;
+  transition: 1s;
 }
 
 .container-title > h1::before {
   display: inline-block;
   width: 70px;
   height: 2px;
-  margin: 4px 10px;
+  margin: 10px;
   content: '';
   background: #ffffff;
 }
@@ -34,7 +45,7 @@
   display: inline-block;
   width: 70px;
   height: 2px;
-  margin: 4px 10px;
+  margin: 10px;
   content: '';
   background: #ffffff;
 }
@@ -42,7 +53,14 @@
 .container-title > h3 {
   font-family: 'Playfair Display', sans-serif;
   font-size: 50px;
+  font-weight: 600;
   color: #cda45e;
+}
+
+.container-title > h3:hover {
+  color: #ffffff;
+  cursor: pointer;
+  transition: 1s;
 }
 
 .container-ul {
@@ -55,6 +73,63 @@
 
 .container-ul > li > a {
   font-size: 20px;
+  font-weight: 600;
   color: #ffffff;
   text-decoration: none;
+}
+
+.container-ul > li > a:hover {
+  color: #cda45e;
+  transition: 0.5s;
+}
+
+.menu-content {
+  display: flex;
+}
+
+.menu-ingredients {
+  display: flex;
+  padding: 10px;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 98vw;
+  padding: 50px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.menu-item > div {
+  display: flex;
+  align-items: flex-end;
+}
+
+.menu-item > div > div > a {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  text-decoration: none !important;
+}
+
+.menu-item > div > div > a:hover {
+  color: #cda45e;
+  transition: 0.5s;
+}
+
+.menu-item > div > div > p {
+  font-size: 10px;
+  color: #ffffff;
+}
+
+.menu-item img {
+  width: 130px;
+  margin-right: 20px;
 }
