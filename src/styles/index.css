@@ -56,11 +56,19 @@ header {
 }
 
 .social-links a {
+  box-sizing: border-box;
   align-items: center;
   padding: 5px 10px 9px;
   margin: 0 25px;
   background-color: #3f3f3f;
   border-radius: 100px;
+}
+
+.section-pages a {
+  margin: 0 7px;
+  font-size: 12px;
+  color: #cda45e;
+  text-decoration: none;
 }
 
 .navbar-nav .nav-link a {
@@ -84,22 +92,22 @@ header {
   transition: all 0.5s;
 }
 
-footer {
+.order {
+  align-items: center;
+  color: #ffffff;
   background-color: #302f2b;
 }
 
-.footer-top {
-  display: flex;
-  justify-content: center;
+/* .order :nth-child(1) {
+  order: 2;
+  background-color: brown;
 }
 
-.gird-container {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 400px 1fr 400px;
-}
+.order :nth-child(2) {
+  background-color: aqua;
+} */
 
-.footer-title {
+.order h2 {
   display: flex;
   justify-content: center;
   padding-top: 20px;
@@ -107,30 +115,63 @@ footer {
   color: #ffffff;
 }
 
-.footer-nav {
+.section-pages {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-pages ul {
+  display: flex;
   list-style: none;
 }
 
-/* .container-title > ul::after {
-  display: inline-block;
-  width: 70px;
-  height: 2px;
-  margin: 10px;
-  content: '';
-  background: #ffffff;
-} */
+.section-pages span {
+  color: #ffffff;
+}
 
 .nav-span {
   padding: 0 7px;
   color: #ffffff;
 }
 
+.section-pages .line {
+  display: flexbox;
+  justify-content: center;
+  width: 400px;
+  margin: 0;
+  opacity: 100;
+}
+
+.end-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-left :first-child {
+  font-size: 15px;
+}
+
+.footer-left p {
+  padding: 3px 0;
+  margin: 0;
+  font-size: 8px;
+}
+
+.footer-center {
+  display: flex;
+  align-items: end;
+}
+
 .social-links {
   display: flex;
-  justify-content: center;
-  margin-top: 60px;
+  justify-content: space-evenly;
   list-style: none;
 }
 
@@ -168,5 +209,21 @@ footer {
   #links :hover a {
     color: #ffffff;
     border: none;
+  }
+
+  .social-links li {
+    margin: 10px;
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-right p {
+    padding: 3px 0;
+    margin: 0;
+    font-size: 8px;
   }
 }
