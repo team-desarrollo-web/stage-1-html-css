@@ -1,5 +1,4 @@
 @import url("'https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'");
-@import url("'https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Taviraj:ital,wght@0,500;1,500&display=swap'");
 @import url("'https://fonts.googleapis.com/css2?family=Roboto&display=swap'");
 
 * {
@@ -20,6 +19,86 @@ header {
   align-items: center;
   justify-content: space-evenly;
   padding-top: 16px;
+}
+
+footer {
+  background-color: #302f2b;
+}
+
+.footer-center h2 {
+  margin: 22px 0;
+  font-family: "'Taviraj'", serif;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.footer-center a {
+  font-family: "'Roboto'", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-center .active {
+  color: #cda45e;
+}
+
+.footer-nav-links a {
+  font-size: 12px;
+  color: #cda45e;
+  text-decoration: none;
+}
+
+.social-links a {
+  box-sizing: border-box;
+  align-items: center;
+  padding: 5px 10px 9px;
+  margin: 0 25px;
+  background-color: #3f3f3f;
+  border-radius: 100px;
+}
+
+.section-pages a {
+  margin: 0 7px;
+  font-size: 12px;
+  color: #cda45e;
+  text-decoration: none;
+}
+
+.footer-center :hover > a {
+  color: #cda45e;
+}
+
+#social-links li {
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link a {
+  padding: 0 20px 4px;
+  font-family: "'Roboto'", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#social-links a {
+  box-sizing: border-box;
+  padding: 7px 10px 10px;
+  background-color: #3b3b3b;
+  border-radius: 100px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.footer-left h3 {
+  margin: 20px 0 5px;
   font-family: "'Taviraj'", serif;
   font-size: 18px;
 }
@@ -49,38 +128,6 @@ header {
   box-shadow: none;
 }
 
-.footer-nav-links a {
-  font-size: 12px;
-  color: #cda45e;
-  text-decoration: none;
-}
-
-.social-links a {
-  box-sizing: border-box;
-  align-items: center;
-  padding: 5px 10px 9px;
-  margin: 0 25px;
-  background-color: #3f3f3f;
-  border-radius: 100px;
-}
-
-.section-pages a {
-  margin: 0 7px;
-  font-size: 12px;
-  color: #cda45e;
-  text-decoration: none;
-}
-
-.navbar-nav .nav-link a {
-  padding: 0 20px 4px;
-  font-family: "'Roboto'", sans-serif;
-  font-size: 16px;
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
 #links .active {
   color: #d9ba85;
   border-bottom: 2px solid #d9ba85;
@@ -92,7 +139,68 @@ header {
   transition: all 0.5s;
 }
 
-.order {
+.footer-left p {
+  margin: 0;
+  font-family: "'Taviraj'", serif;
+  font-size: 11px;
+}
+
+.footer-right article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.footer-right p {
+  font-family: "'Taviraj'", serif;
+  font-size: 11px;
+}
+
+@media only screen and (width <= 425px) {
+  .footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  span {
+    display: none;
+  }
+
+  .footer-center ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .footer-center li {
+    margin: 5px 0;
+  }
+
+  #social-links ul {
+    flex-direction: row;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+
+  .footer-right iframe {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .footer-right p {
+    margin: 0;
+  }
+
+  .footer-right :nth-child(3) {
+    margin-bottom: 50px;
+  }
+}
+
+/* .order {
   align-items: center;
   color: #ffffff;
   background-color: #302f2b;
@@ -107,7 +215,7 @@ header {
   background-color: aqua;
 } */
 
-.order h2 {
+/* .order h2 {
   display: flex;
   justify-content: center;
   padding-top: 20px;
@@ -133,6 +241,18 @@ header {
 .nav-span {
   padding: 0 7px;
   color: #ffffff;
+.social-links a {
+  box-sizing: border-box;
+  padding: 5px 10px 10px;
+  background-color: #3b3b3b;
+  border-radius: 100px;
+} */
+
+/* .section-pages a {
+  margin: 0 7px;
+  font-size: 12px;
+  color: #cda45e;
+  text-decoration: none;
 }
 
 .section-pages .line {
@@ -227,3 +347,8 @@ header {
     font-size: 8px;
   }
 }
+.footer-right p {
+  padding: 3px 0;
+  margin: 0;
+  font-size: 8px;
+} */
