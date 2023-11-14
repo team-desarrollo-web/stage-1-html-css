@@ -1,7 +1,48 @@
-.title {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@200;600&family=Taviraj:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  background-color: #1a1a1a;
+}
+
+h1 {
   display: flex;
-  width: 100px;
-  height: 50px;
-  color: red;
-  background-color: aquamarine;
+  justify-content: center;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: 500 !important;
+  color: #ffffff !important;
+}
+
+h1::before {
+  display: inline-block;
+  width: 70px;
+  height: 2px;
+  margin: 20px;
+  content: '';
+  background: #ffffff;
+}
+
+h1::after {
+  display: inline-block;
+  width: 70px;
+  height: 2px;
+  margin: 20px;
+  content: '';
+  background: #ffffff;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Playfair Display', sans-serif !important;
+  font-size: 50px;
+  font-weight: 700;
+  color: #cda45e !important;
 }
