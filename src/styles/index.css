@@ -27,6 +27,13 @@ footer {
   background-color: #302f2b;
 }
 
+footer ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .top-footer,
 .right-footer,
 .left-footer {
@@ -41,10 +48,7 @@ footer {
 }
 
 .top-footer ul {
-  display: flex;
-  padding: 0;
-  margin: 0 0 45px;
-  list-style: none;
+  margin: 0 0 30px;
 }
 
 .top-footer a {
@@ -113,11 +117,7 @@ footer {
 }
 
 #social-links ul {
-  display: flex;
   align-items: end;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 #social-links li {
@@ -195,15 +195,8 @@ footer {
 
 @media only screen and (width <= 768px) {
   footer ul {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 0;
-    list-style: none;
-  }
-
-  .top-footer ul {
-    margin: 0;
   }
 
   .top-footer li {
