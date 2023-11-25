@@ -1,0 +1,166 @@
+@import url("'https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Taviraj:ital,wght@0,500;1,500&display=swap'");
+@import url("'https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap'");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  font-family: "'Taviraj'", serif;
+  color: #ffffff;
+  background-color: #302f2b;
+}
+
+footer ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.top-footer,
+.right-footer,
+.left-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-footer h2 {
+  margin: 22px 0;
+  font-size: 25px;
+}
+
+.top-footer ul {
+  margin: 0 0 30px;
+}
+
+.top-footer a {
+  margin: 0 5px;
+  font-family: "'Roboto'", sans-serif;
+  font-size: 15px;
+  color: #cda45e;
+  text-decoration: none;
+}
+
+#line {
+  padding: 0 36%;
+  margin-bottom: 30px;
+  color: #ffffff;
+  opacity: 100;
+}
+
+.end-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.end-footer > #social-links {
+  display: flex;
+  align-items: center;
+  order: 2;
+}
+
+.end-footer > #social-links ul {
+  align-items: end;
+}
+
+.end-footer > #social-links li {
+  margin: 0 10px;
+}
+
+.end-footer > #social-links a {
+  box-sizing: border-box;
+  padding: 7px 10px 10px;
+  background-color: #3b3b3b;
+  border-radius: 100px;
+}
+
+.end-footer > .left-footer {
+  order: 1;
+}
+
+.end-footer > .right-footer {
+  order: 3;
+}
+
+.end-footer > .right-footer :last-child {
+  margin-bottom: 20px;
+}
+
+.end-footer h3 {
+  padding: 0;
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+@media only screen and (width <= 768px) {
+  footer ul {
+    align-items: center;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  .top-footer ul {
+    flex-direction: column;
+  }
+
+  .top-footer li {
+    margin: 5px 0;
+  }
+
+  .top-footer .active {
+    color: #cda45e;
+  }
+
+  .top-footer a {
+    color: #ffffff;
+  }
+
+  .top-footer > .active {
+    color: #cda45e;
+  }
+
+  #line {
+    display: none;
+  }
+
+  .end-footer {
+    flex-direction: column;
+  }
+
+  .end-footer p {
+    margin: 0;
+  }
+
+  .end-footer > #social-links {
+    justify-content: center;
+    order: 1;
+  }
+
+  .end-fooeter > #social-links ul {
+    margin: 20px 0;
+    text-decoration: none;
+  }
+
+  .end-footer > .left-footer {
+    order: 2;
+  }
+
+  .end-footer > .left-footer h3 {
+    margin: 20px 0 5px;
+  }
+
+  .end-footer .right-footer :last-child {
+    margin-bottom: 50px;
+  }
+
+  .end-footer iframe {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
