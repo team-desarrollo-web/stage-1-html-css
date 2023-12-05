@@ -9,7 +9,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.container-fluid {
+.menu-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,11 +17,11 @@
   background-color: #1a1a1a;
 }
 
-.container-fluid nav {
+.menu-container nav {
   width: 100%;
 }
 
-.container-title {
+.menu-container__title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,20 +29,20 @@
   color: #ffffff;
 }
 
-.container-title h1 {
+.menu-container__title h1 {
   padding: 20px;
   font-size: 50px;
   font-weight: 600;
 }
 
-.container-title h1:hover {
+.menu-container__title h1:hover {
   color: #cda45e;
   cursor: pointer;
   transition: 1s;
 }
 
-.container-title > h1::before,
-.container-title > h1::after {
+.menu-container__title > h1::before,
+.menu-container__title > h1::after {
   display: inline-block;
   width: 40px;
   height: 1px;
@@ -51,7 +51,7 @@
   background: #ffffff;
 }
 
-.container-title > h3 {
+.menu-container__title > h3 {
   font-family: 'Playfair Display', sans-serif;
   font-size: 45px;
   font-weight: 600;
@@ -66,7 +66,7 @@
   justify-content: space-evenly;
 }
 
-.menu-container {
+.father-container__item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,40 +76,40 @@
   margin-bottom: 50px;
 }
 
-.menu-item {
+.father-container__content {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 70%;
 }
 
-.menu-item > div {
+.father-container__content > div {
   display: flex;
   align-items: flex-start;
 }
 
-.menu-item > div > a {
+.father-container__content > div > a {
   font-size: 16px;
   font-weight: 800;
   color: #ffffff;
   text-decoration: none !important;
 }
 
-.menu-item > div > a:hover {
+.father-container__content > div > a:hover {
   color: #cda45e;
   transition: 0.5s;
 }
 
-.menu-item > div > p {
+.father-container__content > div > p {
   font-size: 10px;
   color: #ffffff;
 }
 
-.menu-item img {
+.father-container__content img {
   width: 90px;
 }
 
-.item {
+.father-container__content--text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -120,11 +120,11 @@
     width: 75%;
   }
 
-  .container-title h1 {
+  .menu-container__title h1 {
     font-size: 30px;
   }
 
-  .container-title h3 {
+  .menu-container__title h3 {
     font-size: 25px;
   }
 }
