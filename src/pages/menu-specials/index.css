@@ -1,7 +1,130 @@
-.title {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@200;600&family=Taviraj:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+menu {
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu-container,
+.menu-container__title,
+.father-container__item {
   display: flex;
-  width: 100px;
-  height: 50px;
-  color: red;
-  background-color: aquamarine;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-container {
+  padding: 0;
+  background-color: #1a1a1a;
+}
+
+.menu-container nav {
+  width: 100%;
+}
+
+.menu-container__title {
+  justify-content: center;
+  color: #ffffff;
+}
+
+.menu-container__title h1 {
+  padding: 20px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.menu-container__title h1:hover {
+  color: #cda45e;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.menu-container__title > h1::before,
+.menu-container__title > h1::after {
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  margin: 10px;
+  content: '';
+  background: #ffffff;
+}
+
+.menu-container__title > h3 {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  color: #cda45e;
+  text-align: center;
+}
+
+.father-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.father-container__item {
+  width: 20%;
+  min-width: 380px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.father-container__content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70%;
+}
+
+.father-container__content > div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.father-container__content > div > a {
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.father-container__content > div > a:hover {
+  color: #cda45e;
+  transition: 0.5s;
+}
+
+.father-container__content > div > p {
+  font-size: 10px;
+  color: #ffffff;
+}
+
+.father-container__content img {
+  width: 90px;
+}
+
+.father-container__content--text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media only screen and (width <= 1543px) {
+  .father-container {
+    width: 75%;
+  }
+
+  .menu-container__title h1 {
+    font-size: 30px;
+  }
+
+  .menu-container__title h3 {
+    font-size: 25px;
+  }
 }
