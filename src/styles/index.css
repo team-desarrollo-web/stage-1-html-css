@@ -6,7 +6,7 @@ main section h2 {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  background: linear-gradient(45deg, rgb(37 211 102 / 100%) 57%, rgb(255 255 255 / 100%) 82%);
+  background-color: #25d366;
   border-radius: 50% 50% 50% 15px;
   animation: roll-in-blurred-right 3s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
