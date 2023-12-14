@@ -24,17 +24,3 @@ main section h2 {
     transform: translateX(0) rotate(0deg);
   }
 }
-
-@keyframes roll-in-blurred-right {
-  0% {
-    filter: blur(50px);
-    opacity: 0;
-    transform: translateX(1000px) rotate(720deg);
-  }
-
-  100% {
-    filter: blur(0);
-    opacity: 1;
-    transform: translateX(0) rotate(0deg);
-  }
-}
