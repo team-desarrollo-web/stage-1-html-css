@@ -61,6 +61,52 @@ main {
   border-radius: 10px;
 }
 
+.text-container {
+  position: relative;
+  bottom: 192px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 192px;
+  font-weight: 600;
+  text-align: center;
+  background: rgb(19 19 19 / 60%);
+  border-radius: 12px 12px 0 0;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.carousel-item:hover {
+  & .text-container {
+    opacity: 1;
+  }
+}
+
+.text-container h5 {
+  font-family: 'Poppins', serif;
+  font-size: 20px;
+  color: #ebebeb;
+}
+
+.text-container h5::after,
+.text-container h5::before {
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  margin: 5px;
+  content: '';
+  background: #a6a6a6;
+}
+
+.text-container p {
+  padding: 0 20px;
+  font-family: 'Taviraj', serif;
+  font-size: 16px;
+  color: #ebebeb;
+}
+
 .button-container {
   display: flex;
   gap: 160px;
