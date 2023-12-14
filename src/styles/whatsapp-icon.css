@@ -1,0 +1,22 @@
+.whatsapp-icon-container {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #25d366;
+  border-radius: 50% 50% 50% 15px;
+  animation: roll-in-blurred-right 3s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+@keyframes roll-in-blurred-right {
+  0% {
+    filter: blur(50px);
+    opacity: 0;
+    transform: translateX(1000px) rotate(720deg);
+  }
+
+  100% {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+}
