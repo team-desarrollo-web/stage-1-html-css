@@ -49,16 +49,8 @@ main {
   justify-content: center;
 }
 
-.carousel,
-.carousel-fade .carousel-inner .carousel-item img {
-  width: 100%;
-  max-width: 600px;
-  height: 100%;
-  max-height: 450px;
-}
-
-.carousel-fade .carousel-inner .carousel-item img {
-  border-radius: 10px;
+.image-container-mobile {
+  display: none;
 }
 
 .text-container {
@@ -78,20 +70,32 @@ main {
   transition: all 1s;
 }
 
-.carousel-item:hover {
+.carousel,
+.carousel-fade .carousel-inner .carousel-item img {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 450px;
+}
+
+.carousel-fade .carousel-inner .carousel-item img {
+  border-radius: 10px;
+}
+
+.carousel-fade .carousel-inner .carousel-item:hover {
   & .text-container {
     opacity: 1;
   }
 }
 
-.text-container h5 {
+.text-container .text-container__title {
   font-family: 'Poppins', serif;
   font-size: 20px;
   color: #ebebeb;
 }
 
-.text-container h5::after,
-.text-container h5::before {
+.text-container .text-container__title::after,
+.text-container .text-container__title::before {
   display: inline-block;
   width: 50px;
   height: 1px;
@@ -100,7 +104,7 @@ main {
   background: #a6a6a6;
 }
 
-.text-container p {
+.text-container .text-container__subtitle {
   padding: 0 20px;
   font-family: 'Taviraj', serif;
   font-size: 16px;
@@ -131,4 +135,56 @@ main {
   background: rgb(253 253 253 / 32%);
   border: 7px solid #a4834b;
   border-radius: 50px;
+}
+
+@media only screen and (width <= 670px) {
+  .title-container h1 {
+    font-size: 30px;
+  }
+
+  .title-container h2 {
+    font-size: 25px;
+  }
+
+  .image-container {
+    display: none;
+  }
+
+  .image-container-mobile {
+    display: inline-block;
+  }
+
+  .image-container-mobile figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container-mobile figure img {
+    width: 90%;
+  }
+
+  .text-container {
+    bottom: 115px;
+    width: 90%;
+    height: 115px;
+    border-radius: 5px;
+    opacity: 1;
+  }
+
+  .text-container .text-container__title {
+    font-size: 15px;
+  }
+
+  .text-container .text-container__subtitle {
+    font-size: 12px;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 0 0 100px;
+  }
 }
