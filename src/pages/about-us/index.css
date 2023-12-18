@@ -11,6 +11,7 @@
 body {
   background-image: url(../../assets/about-us/fondo-about.png);
 }
+
 /* start styles title and subtitle */
 
 section h1 {
@@ -55,9 +56,16 @@ main section h2 {
 
 .container__general {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding: 50px;
   margin: 50px;
+}
+
+@media only screen and (width <= 1000px) {
+  .container__general {
+    flex-direction: column;
+  }
 }
 
 /* start styles container-father */
