@@ -1,3 +1,4 @@
+/* stylelint-disable function-url-quotes */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@200;600&family=Taviraj:wght@500&display=swap');
 
@@ -7,17 +8,18 @@
   font-family: 'Poppins', sans-serif;
 }
 
-main {
-  background-color: #1a1a1a;
+body {
+  background-image: url(../../assets/about-us/fondo-about.png);
 }
+/* start styles title and subtitle */
 
-h1 {
+section h1 {
   display: flex;
   justify-content: center;
   padding: 20px;
   font-size: 40px;
-  font-weight: 500 !important;
-  color: #ffffff !important;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 h1::before {
@@ -38,11 +40,69 @@ h1::after {
   background: #ffffff;
 }
 
-h2 {
+main section h2 {
   display: flex;
   justify-content: center;
-  font-family: 'Playfair Display', sans-serif !important;
-  font-size: 50px;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 40px;
   font-weight: 700;
-  color: #cda45e !important;
+  color: #cda45e;
 }
+
+/* end styles title and subtitle */
+
+/* start styles container-father */
+
+.container__general {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  margin: 50px;
+}
+
+/* start styles container-father */
+
+/* start styles container__left */
+
+.container__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.working__hours {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  color: #ffffff;
+}
+
+.reserve {
+  display: flex;
+  justify-content: center;
+}
+
+main div section div a {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 4px solid #cda45e;
+  border-radius: 50px;
+}
+
+main div section div p {
+  margin-left: 10px;
+}
+
+/* end styles container__left */
+
+/* start styles container__right */
+
+.container__right {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+/* end styles container__right */
