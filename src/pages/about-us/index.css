@@ -10,6 +10,8 @@
 
 body {
   background-image: url(../../assets/about-us/fondo-about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* start styles title and subtitle */
@@ -23,16 +25,7 @@ section h1 {
   color: #ffffff;
 }
 
-h1::before {
-  display: inline-block;
-  width: 70px;
-  height: 2px;
-  margin: 20px;
-  content: '';
-  background: #ffffff;
-}
-
-h1::after {
+h1::before, h1::after {
   display: inline-block;
   width: 70px;
   height: 2px;
@@ -62,10 +55,8 @@ main section h2 {
   margin: 50px;
 }
 
-@media only screen and (width <= 1000px) {
-  .container__general {
-    flex-direction: column;
-  }
+section img {
+
 }
 
 /* start styles container-father */
@@ -114,3 +105,28 @@ main div section div p {
 }
 
 /* end styles container__right */
+
+@media only screen and (width <= 1280px) {
+  .container__general {
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+  }
+}
+
+@media only screen and (width <= 500px) {
+  section h1 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  h1::before, h1::after {
+    width: 40px;
+    margin: 10px;
+  }
+
+  main section h2 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
