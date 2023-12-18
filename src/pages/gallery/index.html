@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../styles/header.css" />
     <link rel="stylesheet" href="../../styles/whatsapp-icon.css" />
     <link rel="stylesheet" href="../../styles/footer.css" />
+    <link rel="stylesheet" href="./index.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -89,98 +90,140 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h1 class="title">Gallery</h1>
+      <section class="title-container">
+        <h1>Gallery</h1>
         <h2>Live unforgettable experiences</h2>
       </section>
-      <section>
+      <section class="image-container">
+        <div id="carouselExampleFade" class="images-container carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <figure class="carousel-item active">
+              <img src="../../assets/gallery/great-capacity.svg" class="d-block" alt="great-capacity">
+              <div class="text-container">
+                <figcaption class="text-container__title">Great capacity</figcaption>
+                <figcaption class="text-container__subtitle">We have a large and comfortable space to offer an incredible sensory experience between the harmonious balance of decoration and lighting.</figcaption>
+              </div>
+            </figure>
+            <figure class="carousel-item">
+              <img src="../../assets/gallery/night-out.svg" class="d-block" alt="night-out">
+              <div class="text-container">
+                <figcaption class="text-container__title">Night out</figcaption>
+                <figcaption class="text-container__subtitle">We can transform your nights out into memorable experiences. With extraordinary dishes, we offer the perfect combination for those looking to enjoy special nights.</figcaption>
+              </div>
+            </figure>
+            <figure class="carousel-item">
+              <img src="../../assets/gallery/bar-area.svg" class="d-block" alt="bar-area">
+              <div class="text-container">
+                <figcaption class="text-container__title">Bar area</figcaption>
+                <figcaption class="text-container__subtitle">Here, our customers can enjoy the warmth of a coffee or delight in carefully crafted craft cocktails. This space is ideal for relaxing and socializing.</figcaption>
+              </div>
+            </figure>
+            <figure class="carousel-item">
+              <img src="../../assets/gallery/family-breakfast.svg" class="d-block" alt="family-breakfast">
+              <div class="text-container">
+                <figcaption class="text-container__title">Family breakfast</figcaption>
+                <figcaption class="text-container__subtitle">Start the day with us! Our warm atmosphere and delicious breakfast create the perfect setting for special moments. We make every family breakfast unforgettable.</figcaption>
+              </div>
+            </figure>
+            <figure class="carousel-item">
+              <img src="../../assets/gallery/staff.svg" class="d-block" alt="staff">
+              <div class="text-container">
+                <figcaption class="text-container__title">Staff</figcaption>
+                <figcaption class="text-container__subtitle">We stand out for our exceptional ability to merge gastronomic excellence with impeccable service. From innovation in our varied menu to detailed customer service.</figcaption>
+              </div>
+            </figure>
+            <figure class="carousel-item">
+              <img src="../../assets/gallery/outings-with-friends.svg" class="d-block" alt="outings-with-friends">
+              <div class="text-container">
+                <figcaption class="text-container__title">Outings with friends</figcaption>
+                <figcaption class="text-container__subtitle">Here the experience of going out with friends takes on a unique advantage. Not only do we offer a delicious selection of dishes, but we also provide the perfect setting to share laughter and conversation.</figcaption>
+              </div>
+            </figure>
+            <figure class="carousel-item">
+              <img src="../../assets/gallery/catering-for-events.svg" class="d-block" alt="catering-for-events">
+              <div class="text-container">
+                <figcaption class="text-container__title">Catering for events</figcaption>
+                <figcaption class="text-container__subtitle">We are proud to bring our restaurant experience to you. From intimate events to large celebrations, our advantage lies in offering a delicious variety of gourmet dishes, along with personalized service.</figcaption>
+            </figure>
+            <figure class="carousel-item">
+              <img src="../../assets/gallery/family-outing.svg" class="d-block" alt="family-outing">
+              <div class="text-container">
+                <figcaption class="text-container__title">Family outing</figcaption>
+                <figcaption class="text-container__subtitle">Our restaurant prides itself on being the perfect destination for family outings. We offer a menu with various options for all family members, from the smallest to the largest, guaranteeing a dining experience that everyone will enjoy.</figcaption>
+              </div>
+            </figure>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="image-container-mobile">
         <figure>
-          <img src="../../assets/gallery/great-capacity.svg" alt="great-capacity" />
-          <div>
-            <figcaption>Great capacity</figcaption>
-            <figcaption>
-              We have a large and comfortable space to offer an incredible sensory experience
-              between the harmonious balance of decoration and lighting.
-            </figcaption>
+          <img src="../../assets/gallery/great-capacity.svg" alt="great-capacity">
+          <div class="text-container">
+            <figcaption class="text-container__title">Great capacity</figcaption>
+            <figcaption class="text-container__subtitle">We have a large and comfortable space to offer an incredible sensory experience between the harmonious balance of decoration and lighting.</figcaption>
           </div>
         </figure>
         <figure>
-          <img src="../../assets/gallery/night-out.svg" alt="night-out" />
-          <div>
-            <figcaption>Night out</figcaption>
-            <figcaption>
-              We can transform your nights out into memorable experiences. With extraordinary
-              dishes, we offer the perfect combination for those looking to enjoy special nights.
-            </figcaption>
+          <img src="../../assets/gallery/night-out.svg" alt="night-out">
+          <div class="text-container">
+            <figcaption class="text-container__title">Night out</figcaption>
+            <figcaption class="text-container__subtitle">We can transform your nights out into memorable experiences. With extraordinary dishes, we offer the perfect combination for those looking to enjoy special nights.</figcaption>
           </div>
         </figure>
         <figure>
-          <img src="../../assets/gallery/bar-area.svg" alt="bar-area" />
-          <div>
-            <figcaption>Bar area</figcaption>
-            <figcaption>
-              Here, our customers can enjoy the warmth of a coffee or delight in carefully crafted
-              craft cocktails. This space is ideal for relaxing and socializing.
-            </figcaption>
+          <img src="../../assets/gallery/bar-area.svg" alt="bar-area">
+          <div class="text-container">
+            <figcaption class="text-container__title">Bar area</figcaption>
+            <figcaption class="text-container__subtitle">Here, our customers can enjoy the warmth of a coffee or delight in carefully crafted craft cocktails. This space is ideal for relaxing and socializing.</figcaption>
           </div>
         </figure>
         <figure>
-          <img src="../../assets/gallery/family-breakfast.svg" alt="family-breakfast" />
-          <div>
-            <figcaption>Family breakfast</figcaption>
-            <figcaption>
-              Start the day with us! Our warm atmosphere and delicious breakfast create the perfect
-              setting for special moments. We make every family breakfast unforgettable.
-            </figcaption>
+          <img src="../../assets/gallery/family-breakfast.svg" alt="family-breakfast">
+          <div class="text-container">
+            <figcaption class="text-container__title">Family breakfast</figcaption>
+            <figcaption class="text-container__subtitle">Start the day with us! Our warm atmosphere and delicious breakfast create the perfect setting for special moments. We make every family breakfast unforgettable.</figcaption>
           </div>
         </figure>
         <figure>
-          <img src="../../assets/gallery/staff.svg" alt="staff" />
-          <div>
-            <figcaption>Staff</figcaption>
-            <figcaption>
-              We stand out for our exceptional ability to merge gastronomic excellence with
-              impeccable service. From innovation in our varied menu to detailed customer service.
-            </figcaption>
+          <img src="../../assets/gallery/staff.svg" alt="staff">
+          <div class="text-container">
+            <figcaption class="text-container__title">Staff</figcaption>
+            <figcaption class="text-container__subtitle">We stand out for our exceptional ability to merge gastronomic excellence with impeccable service. From innovation in our varied menu to detailed customer service.</figcaption>
           </div>
         </figure>
         <figure>
-          <img src="../../assets/gallery/outings-with-friends.svg" alt="outings-with-friends" />
-          <div>
-            <figcaption>Outings with friends</figcaption>
-            <figcaption>
-              Here the experience of going out with friends takes on a unique advantage. Not only do
-              we offer a delicious selection of dishes, but we also provide the perfect setting to
-              share laughter and conversation.
-            </figcaption>
+          <img src="../../assets/gallery/outings-with-friends.svg" alt="outings-with-friends">
+          <div class="text-container">
+            <figcaption class="text-container__title">Outings with friends</figcaption>
+            <figcaption class="text-container__subtitle">Here the experience of going out with friends takes on a unique advantage. Not only do we offer a delicious selection of dishes, but we also provide the perfect setting to share laughter and conversation.</figcaption>
           </div>
         </figure>
         <figure>
-          <img src="../../assets/gallery/catering-for-events.svg" alt="catering-for-events" />
-          <div>
-            <figcaption>Catering for events</figcaption>
-            <figcaption>
-              We are proud to bring our restaurant experience to you. From intimate events to large
-              celebrations, our advantage lies in offering a delicious variety of gourmet dishes,
-              along with personalized service.
-            </figcaption>
+          <img src="../../assets/gallery/catering-for-events.svg" alt="catering-for-events">
+          <div class="text-container">
+            <figcaption class="text-container__title">Catering for events</figcaption>
+            <figcaption class="text-container__subtitle">We are proud to bring our restaurant experience to you. From intimate events to large celebrations, our advantage lies in offering a delicious variety of gourmet dishes, along with personalized service.</figcaption>
           </div>
         </figure>
         <figure>
-          <img src="../../assets/gallery/family-outing.svg" alt="family-outing" />
-          <div>
-            <figcaption>Family outing</figcaption>
-            <figcaption>
-              Our restaurant prides itself on being the perfect destination for family outings. We
-              offer a menu with various options for all family members, from the smallest to the
-              largest, guaranteeing a dining experience that everyone will enjoy.
-            </figcaption>
+          <img src="../../assets/gallery/family-outing.svg" alt="family-outing">
+          <div class="text-container">
+            <figcaption class="text-container__title">Family outing</figcaption>
+            <figcaption class="text-container__subtitle">Our restaurant prides itself on being the perfect destination for family outings. We offer a menu with various options for all family members, from the smallest to the largest, guaranteeing a dining experience that everyone will enjoy.</figcaption>
           </div>
         </figure>
       </section>
-      <section>
-        <a href="../menu-specials/index.html">Menu</a>
-        <a href="../events-contacts/index.html">Reserve</a>
+      <section class="button-container">
+        <a class="button-menu" href="../menu-specials/index.html">Menu</a>
+        <a class="button-reserve" href="../events-contacts/index.html">Reserve</a>
       </section>
     </main>
     <div class="whatsapp-icon-container">
