@@ -18,12 +18,12 @@ main {
 }
 
 section h1 {
-  text-align: center;
   padding: 20px;
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 500;
   color: #ffffff;
+  text-align: center;
 }
 
 h1::before,
@@ -37,11 +37,11 @@ h1::after {
 }
 
 main section h2 {
-  text-align: center;
   font-family: 'Playfair Display', sans-serif;
   font-size: 40px;
   font-weight: 700;
   color: #cda45e;
+  text-align: center;
 }
 
 .container__general {
