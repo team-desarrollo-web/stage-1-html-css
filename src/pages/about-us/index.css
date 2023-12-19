@@ -17,7 +17,7 @@ main {
   font-family: 'Taviraj', sans-serif;
 }
 
-section h1 {
+.title__subtitle h1 {
   padding: 20px;
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
@@ -26,17 +26,17 @@ section h1 {
   text-align: center;
 }
 
-h1::before,
-h1::after {
+.title__subtitle h1::before,
+.title__subtitle h1::after {
   display: inline-block;
   width: 70px;
   height: 2px;
-  margin: 20px;
+  margin: 10px;
   content: '';
   background: #ffffff;
 }
 
-main section h2 {
+.title__subtitle h2 {
   font-family: 'Playfair Display', sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -116,18 +116,18 @@ main section h2 {
 }
 
 @media only screen and (width <= 500px) {
-  section h1 {
+  .title__subtitle h1 {
     font-size: 20px;
     font-weight: 500;
   }
 
-  h1::before,
-  h1::after {
+  .title__subtitle h1::before,
+  .title__subtitle h1::after {
     width: 40px;
     margin: 10px;
   }
 
-  main section h2 {
+  .title__subtitle h2 {
     font-size: 15px;
     font-weight: 700;
   }
