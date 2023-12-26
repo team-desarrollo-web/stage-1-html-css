@@ -1,7 +1,134 @@
-.title {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@200;600&family=Taviraj:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url('../../assets/about-us/fondo-about.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  font-family: 'Taviraj', sans-serif;
+}
+
+.title__subtitle h1 {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+
+.title__subtitle h1::before,
+.title__subtitle h1::after {
+  display: inline-block;
+  width: 70px;
+  height: 2px;
+  margin: 10px;
+  content: '';
+  background: #ffffff;
+}
+
+.title__subtitle h2 {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #cda45e;
+  text-align: center;
+}
+
+.container__general {
   display: flex;
-  width: 100px;
-  height: 50px;
-  color: red;
-  background-color: aquamarine;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+  margin: 50px;
+}
+
+.container__general--left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__general--left img {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 450px;
+}
+
+.container__general--left .working__hours {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.container__general--left .working__hours p {
+  margin: 10px;
+}
+
+.container__general--left svg {
+  width: 44px;
+  height: 45px;
+}
+
+.container__general--left .reserve {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 225px;
+  height: 73px;
+  padding: 10px 16px;
+  border: 4px solid #cda45e;
+  border-radius: 50px;
+}
+
+.container__general--left .reserve a {
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container__general--right {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+@media only screen and (width <= 1280px) {
+  .container__general {
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+  }
+}
+
+@media only screen and (width <= 500px) {
+  .title__subtitle h1 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .title__subtitle h1::before,
+  .title__subtitle h1::after {
+    width: 40px;
+    margin: 10px;
+  }
+
+  .title__subtitle h2 {
+    font-size: 15px;
+    font-weight: 700;
+  }
 }
